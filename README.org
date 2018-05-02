@@ -1,0 +1,36 @@
+* PythonとAIの学習設定 & メモ
+
+AI学習の記録
+
+* 学習メモ
+** 機械学習とは
+- [[https://qiita.com/ishizakiiii/items/d422019b52d973e0e28d][機械学習超入門]]
+- [[https://qiita.com/ishizakiiii/items/f6909696c616fd6294ca][機械学習の情報を手法を中心にざっくり整理]]
+
+** 業務上のデータでとるときの注意点
+- *必ず数値に変換できるものにすること*
+  
+* 環境メモ
+- docker + docker-nvida でPython環境作る。 参考: https://qiita.com/tomo_makes/items/0bb10bcaf7093855e9e5
+  + docker-nvidaがWindows上で動かないから、素のdockerでやる。
+- docker + tensorflow(google製)
+- notebookは、notebooksフォルダに置く。
+
+** 構築方法
+1. ~docker build -t learnpyai .~ でビルドする。
+2. Kitematicで起動し、以下の設定とする。
+   - Port: 8888:8888
+   - Volume: /here-folder/notebooks:/notebooks
+# ~docker run -it --name learn-py-ai -v /here/folder/notebooks:/notebooks -p 8888:8888 learnpyai~
+
+
+* 参考URL
+
+ 
+* COMMENT org-mode config
+#+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) APPT(a) | DONE(d) CANCELLED(c) DEFERRED(f)
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: logdone
+
+
