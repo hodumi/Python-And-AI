@@ -25,7 +25,9 @@ AI学習の記録
 
 
 * 参考URL
-
+** Python
+- [[https://docs.python.jp/2.7/tutorial/index.html][Python チュートリアル]]
+- [[http://www.unixuser.org/~euske/doc/python/python-lisp-j.html][Lisp プログラマのための Python 入門]]
  
 * COMMENT org-mode config
 #+SEQ_TODO: TODO(t) STARTED(s) WAITING(w) APPT(a) | DONE(d) CANCELLED(c) DEFERRED(f)
