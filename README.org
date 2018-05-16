@@ -17,11 +17,13 @@ AI学習の記録
 - notebookは、notebooksフォルダに置く。
 
 ** 構築方法
-1. ~docker build -t learnpyai .~ でビルドする。
-2. Kitematicで起動し、以下の設定とする。
+1. このプロジェクトをダウンロードする。
+2. ~docker build -t learnpyai .~ でビルドする。
+3. Kitematicで起動し、以下の設定とする。
    - Port: 8888:8888
+   - Port: 6006:6006
    - Volume: /here-folder/notebooks:/notebooks
-# ~docker run -it --name learn-py-ai -v /here/folder/notebooks:/notebooks -p 8888:8888 learnpyai~
+# ~docker run -it --name learn-py-ai -v /here/folder/notebooks:/notebooks -p 6006:6006 -p 8888:8888 learnpyai~
 
 
 * 参考URL
